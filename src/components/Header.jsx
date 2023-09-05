@@ -1,17 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Search from "../icons/Search";
 import Logo from "../icons/logo.svg";
-const Header = () => {
+const Header = ({ isStickyHeader }) => {
+  const [isSticky, setIsSticky] = useState();
+
+  const handleScroll = () => {
+    // Check if the user has scrolled beyond a certain threshold (e.g., 100px)
+    const threshold = 10;
+    setIsSticky(window.scrollY > threshold);
+  };
+
+  // Attach the scroll event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="container-fluid bg-white sticky-top">
+    <div
+      className={`container-fluid ${isSticky ? "sticky-top" : ""} ${
+        isStickyHeader ? "absolute-header" : ""
+      }`}
+      id="navBar"
+    >
       <div className="container">
-        <nav className="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+        <nav className="navbar navbar-expand-lg navbar-light py-2 py-lg-0">
           <a href="index.html" className="navbar-brand">
             <img className="img-fluid logo-image" src={Logo} alt="Logo" />
           </a>
           <button
             type="button"
-            className="navbar-toggler ms-auto me-0"
+            className="navbar-toggler ms-auto me-0 w-auto"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >

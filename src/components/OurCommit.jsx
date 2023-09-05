@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import Loader from "../icons/Loader";
 import patientIcon from "../assets/images/icons/patient.png";
 import Checked from "../assets/images/icons/checked.png";
@@ -79,11 +79,11 @@ const OurCommit = () => {
   };
 
   // Use lazy loading for dynamic import
-  const loadIconComponent = (icon) => {
-    const LazyComponent = lazy(() => import(`../assets/images/icons/${icon}`));
+  // const loadIconComponent = (icon) => {
+  //   const LazyComponent = lazy(() => import(`../assets/images/icons/${icon}`));
 
-    return LazyComponent;
-  };
+  //   return LazyComponent;
+  // };
 
   return (
     <div className="container py-5">

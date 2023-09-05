@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-3 col-md-6">
-            <h4 className=" mb-4">Our Office</h4>
+            <h4 className=" mb-4">Our Office2</h4>
             <p className="mb-2">
               <i className="fa fa-map-marker-alt  me-3"></i>123 Street, New
               York, USA

@@ -15,8 +15,7 @@ const Faq = () => {
     {
       header: "How to book a test online?",
       content:
-        'You can book a health test on the Meditest website through the following ways\
-        Select a package that best suits your requirements or doctor recommended tests from the "Health Checkup Packages". You will be prompted to update your location on top right of the screen - please select the location for which you wish to see the packages (for example, if you live in Gurgaon, and you wish to check packages for your parents who live in Indore, please select Indore in location prompt.)',
+        'You can book a health test on the Meditest website through the following ways Select a package that best suits your requirements or doctor recommended tests from the "Health Checkup Packages". You will be prompted to update your location on top right of the screen - please select the location for which you wish to see the packages (for example, if you live in Gurgaon, and you wish to check packages for your parents who live in Indore, please select Indore in location prompt.)',
     },
     {
       header: "What are some basic technical skills of a Front-End developer?",
