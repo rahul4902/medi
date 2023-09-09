@@ -22,7 +22,7 @@ const Header = ({ isStickyHeader }) => {
     <div
       className={`container-fluid ${isSticky ? "sticky-top" : ""} ${
         isStickyHeader ? "absolute-header" : ""
-      }`}
+      } p-0`}
       id="navBar"
     >
       <div className="container">

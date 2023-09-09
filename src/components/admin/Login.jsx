@@ -47,7 +47,7 @@ function Login() {
       );
     } catch (error) {
       console.log(error);
-      toast.error("User Registration Failed.");
+      toast.error("User Login Failed.");
     } finally {
       // setLoading(false);
     }

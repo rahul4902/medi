@@ -1,13 +1,20 @@
 const FullBodyCheckup = () => {
   return (
-    <div className="container py-5">
+    <div className="container">
       <div className="row">
-        <div className="col-12 text-center py-5">
-          <span className="line"></span>
+        <div className="col-12 py-5">
+          {/* <span className="line"></span>
           <span className="heading">Full Body Checkup</span>
-          <span className="line"></span>
+          <span className="line"></span> */}
+          <div class="sectionHead">
+            <h5 class="subtitle">
+              <span class="line"></span>
+              <span class="subtitle-text">Our Services</span>
+            </h5>
+            <h4 class="title">Services We Offer</h4>
+          </div>
         </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
+        <div className="col-md-4 col-sm-12 col-xs-12 col-12">
           <div className="dealwrapper danger">
             <div className="ribbon-wrapper">
               <div className="ribbon-tag">30% Off</div>

@@ -9,10 +9,13 @@ const Home = () => {
   return (
     <div>
       <Banner />
+
       <SearchForm />
       <FullBodyCheckup />
       <PopularPackages />
-      <OurCommit />
+      <div className="bg-gray-light">
+        <OurCommit />
+      </div>
       <Faq />
     </div>
   );

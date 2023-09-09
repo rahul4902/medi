@@ -6,13 +6,13 @@ import Autocomplete from "react-autocomplete";
 const SearchForm = () => {
   const [search, setSearch] = useState("");
   return (
-    <div>
+    <div className="container">
       <div className="search-form">
         <form action="#">
           <div className="row justify-content-center">
-            <div className="col-md-9 col-sm-9 col-12">
+            <div className="col-md-12 col-sm-12 col-12">
               <div className="row">
-                <div className="col-md-6 col-sm-6 col-lg-6 col-12  mb-4">
+                <div className="col-md-6 col-sm-6 col-lg-6 col-12">
                   <div className="input-group auto-complete-section">
                     <select
                       className="form-select"
@@ -57,7 +57,7 @@ const SearchForm = () => {
                   <div className="location-container">
                     <select
                       name="location"
-                      className="select-input no-focus-outline"
+                      className="select-input no-focus-outline location-input"
                     >
                       <option selected>Location</option>
                     </select>
@@ -71,6 +71,7 @@ const SearchForm = () => {
                     <div className="icon-container">
                       <Search height="18px" />
                     </div>
+                    <span>Search</span>
                   </button>
                 </div>
               </div>

@@ -23,10 +23,17 @@ const PopularPackages = () => {
   return (
     <div className="container py-5">
       <div className="row">
-        <div className="col-12 text-center mb-5">
-          <span className="line"></span>
+        <div className="col-12 mb-5">
+          {/* <span className="line"></span>
           <span className="heading">Most Popular Packages</span>
-          <span className="line"></span>
+          <span className="line"></span> */}
+          <div class="sectionHead">
+            <h5 class="subtitle">
+              <span class="line"></span>
+              <span class="subtitle-text">Most Popular Packages</span>
+            </h5>
+            <h4 class="title">Popular Packages</h4>
+          </div>
         </div>
 
         {[1, 2, 4].map((_v, _x) => {

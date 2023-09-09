@@ -47,12 +47,19 @@ const Faq = () => {
   ];
 
   return (
-    <div className="py-5 bgi-1">
-      <div className="row">
+    <div className="py-5">
+      <div className="container">
         <div className="col-12 text-center py-5">
-          <span className="line"></span>
+          {/* <span className="line"></span>
           <span className="heading">FAQ'S</span>
-          <span className="line"></span>
+          <span className="line"></span> */}
+          <div class="sectionHead">
+            <h5 class="subtitle">
+              {/* <span class="line"></span> */}
+              {/* <span class="subtitle-text">Most Popular Packages</span> */}
+            </h5>
+            <h4 class="title">FAQ'S</h4>
+          </div>
         </div>
         <div className="col-12">
           <div className="accordion">
