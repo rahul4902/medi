@@ -53,12 +53,12 @@ const Faq = () => {
           {/* <span className="line"></span>
           <span className="heading">FAQ'S</span>
           <span className="line"></span> */}
-          <div class="sectionHead">
-            <h5 class="subtitle">
-              {/* <span class="line"></span> */}
-              {/* <span class="subtitle-text">Most Popular Packages</span> */}
+          <div className="sectionHead">
+            <h5 className="subtitle">
+              {/* <span className="line"></span> */}
+              {/* <span className="subtitle-text">Most Popular Packages</span> */}
             </h5>
-            <h4 class="title">FAQ'S</h4>
+            <h4 className="title">FAQ'S</h4>
           </div>
         </div>
         <div className="col-12">

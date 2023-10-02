@@ -18,9 +18,6 @@ const NavBar = ({ onSidebarToggle }) => {
           </button>
         </div>
         <div className="d-flex gap-2">
-          <button onClick={toggleTheme}>
-            Toggle Theme: {isDarkMode ? "Dark" : "Light"}
-          </button>
           <ProfileContainer />
         </div>
       </div>

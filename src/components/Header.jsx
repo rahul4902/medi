@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Search from "../icons/Search";
 import Logo from "../icons/logo.svg";
+import { Link } from "react-router-dom";
 const Header = ({ isStickyHeader }) => {
   const [isSticky, setIsSticky] = useState();
 
@@ -21,15 +22,15 @@ const Header = ({ isStickyHeader }) => {
   return (
     <div
       className={`container-fluid ${isSticky ? "sticky-top" : ""} ${
-        isStickyHeader ? "absolute-header" : ""
+        isStickyHeader ? "absolute-header" : "bg-white"
       } p-0`}
       id="navBar"
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light py-2 py-lg-0">
-          <a href="index.html" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img className="img-fluid logo-image" src={Logo} alt="Logo" />
-          </a>
+          </Link>
           <button
             type="button"
             className="navbar-toggler ms-auto me-0 w-auto"

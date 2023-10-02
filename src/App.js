@@ -15,6 +15,11 @@ import AdminRegister from "./components/admin/Register";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PrivateAdminRoute from "./helper/PrivateAdminRoute";
+import Header from "./components/Header";
+import WhatsAppIcon from "./components/WhatsAppIcon";
+import Footer from "./components/Footer";
+import SearchResults from "./components/Client/SearchResults";
+import QueryFormPopup from "./components/Client/QueryFormPopup";
 
 function App() {
   useEffect(() => {
@@ -31,6 +36,15 @@ function App() {
       position: toast.POSITION.TOP_CENTER,
     });
   };
+
+  const routeArray = [
+    { path: "/", isStickyHeader: true, component: <Home /> },
+    {
+      path: "search/details/:id",
+      isStickyHeader: false,
+      component: <SearchResults />,
+    },
+  ];
 
   return (
     <>
@@ -53,22 +67,22 @@ function App() {
           <Routes>
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/register" element={<AdminRegister />} />
-            {/* <Route
-              path="/admin/*"
-              element={
-                <AdminLayout>
-                  <Outlet />
-                </AdminLayout>
-              }
-            /> */}
-            <Route
-              path="/*"
-              element={
-                <FrontLayout>
-                  <Home />
-                </FrontLayout>
-              }
-            />
+            {routeArray.map((linkItem, index) => (
+              <Route
+                key={index}
+                path={linkItem.path}
+                element={
+                  <div className="App">
+                    <Header isStickyHeader={linkItem.isStickyHeader} />
+                    {linkItem.component}
+                    <WhatsAppIcon />
+                    <Footer />
+                    <QueryFormPopup />
+                  </div>
+                }
+              />
+            ))}
+
             <Route
               path="/admin/*"
               element={

@@ -44,13 +44,13 @@ const OurCommit = () => {
     },
     {
       icon: "oc3.svg",
-      title: "Timely and Convenient Service",
+      title: "Timely & Convenient Service",
       description:
         "Urgent tests? Our promise is swift service without compromising accuracy. Online scheduling and multiple locations make it seamless.",
     },
     {
       icon: "oc4.svg",
-      title: "Ethical and Confidential Handling",
+      title: "Ethical & Confidential Handling",
       description:
         "Privacy is vital. We follow ethical practices in handling samples. Personal and medical data are confidential, aligned with regulations.",
     },
@@ -83,8 +83,10 @@ const OurCommit = () => {
           >
             <img src={iconImagePath} alt={title} className="our-commit-img" />
           </Suspense>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <div className="mt-2">
+            <h5>{title}</h5>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     );
@@ -104,12 +106,12 @@ const OurCommit = () => {
           {/* <span className="line"></span>
           <span className="heading">Our Commitments</span>
           <span className="line"></span> */}
-          <div class="sectionHead">
-            <h5 class="subtitle">
-              {/* <span class="line"></span> */}
-              {/* <span class="subtitle-text">Most Popular Packages</span> */}
+          <div className="sectionHead">
+            <h5 className="subtitle">
+              {/* <span className="line"></span> */}
+              {/* <span className="subtitle-text">Most Popular Packages</span> */}
             </h5>
-            <h4 class="title">Our Commitments</h4>
+            <h4 className="title">Our Commitments</h4>
           </div>
         </div>
 

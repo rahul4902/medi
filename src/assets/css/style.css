@@ -13,8 +13,9 @@
   --light: #f5f8f2;
   --dark: #252c30;
   --white-color: #fff;
-  --border-color: rgb(232, 226, 226);
+  --border-color: whitesmoke;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -588,10 +589,16 @@ a {
   border-radius: 50px;
   box-shadow: 0px 19px 18px -14px lightgray;
 }
+.search-form .form-select {
+  flex: none !important;
+  width: 25% !important;
+  border-radius: 25px 0px 0px 25px !important;
+  border-color: whitesmoke !important;
+}
 .search-form input,
-select,
-button {
-  background: #fff;
+.search-form select,
+.search-form button {
+  /* background: #fff; */
   border: 2px solid whitesmoke;
   border-radius: 25px;
   padding: 5px 10px;
@@ -603,7 +610,6 @@ button {
   text-indent: 1px;
   text-overflow: "";
 }
-
 .no-focus-outline:focus {
   outline: none;
   box-shadow: none;
@@ -704,24 +710,11 @@ button {
   color: #fafbfc;
 }
 
-.form-select {
-  flex: none !important;
-  width: 25% !important;
-  border-radius: 25px 0px 0px 25px !important;
-  border-color: whitesmoke !important;
-}
 .auto-complete-section div {
   /* width: 100%; */
 }
 .auto-complete-section input {
   border-radius: 0 25px 25px 0;
-}
-
-@media (max-width: 767px) {
-  /* Adjust the breakpoint as needed */
-  .col-xs-0 {
-    display: none;
-  }
 }
 
 .Toastify__close-button {
@@ -739,4 +732,180 @@ button {
 
 .bg-gray-light {
   background-color: #f3f3f9;
+}
+
+/* MUI DATATABLE */
+
+.css-11mde6h-MuiPaper-root {
+  /* background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  /* transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+  /* border-radius: 4px;
+  box-shadow: 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
+  background-color: rgb(255 255 255 / 1) !important;
+  border-radius: 0.375rem !important;
+  margin-bottom: 25px !important;
+  border-color: rgb(226 232 240 / 1) !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  box-shadow: 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  margin-bottom: 25px !important;
+}
+.tss-9562fz-MUIDataTableViewCol-root {
+  padding: 16px 24px 16px 24px !important;
+  font-family: inherit !important;
+}
+
+.custom-font-size {
+  font-size: 9px !important;
+}
+
+.confirmation-container {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(4px);
+  background-color: rgb(0 0 0/0.1);
+}
+
+.dialog-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.confirmation-dialog {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+}
+.autocomplete-search {
+  position: relative;
+}
+.autocomplete-search .autocomplete-loader {
+  position: absolute;
+  right: 12px;
+  color: lightgray;
+  top: 18px;
+  display: flex;
+  align-items: center;
+}
+.autocomplete-search ul {
+  margin: 0;
+  list-style: none;
+  padding: 0px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0px 0px 10px 0px whitesmoke;
+  width: 100%;
+  position: absolute;
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.autocomplete-search ul li {
+  display: block;
+  padding: 5px 10px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+  width: 100%;
+  background: #fff;
+}
+.autocomplete-search ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.autocomplete-search ul li:hover {
+  background-color: whitesmoke;
+}
+
+.autocomplete-search ul li small {
+  font-size: 10px;
+}
+
+.testDetails .productDetails {
+  box-shadow: 0px 16px 28px 0px #24242414;
+  padding: 38px 40px;
+  border-radius: 14px;
+}
+/* .testDetails .productDetails .productName {
+  font-size: 16px;
+  font-family: PTSans-Bold;
+  margin-bottom: 5px;
+} */
+
+@media (max-width: 575px) {
+  .search-autocomplete {
+    margin-bottom: 10px;
+  }
+  .search-btn span {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  /* Adjust the breakpoint as needed */
+  .col-xs-0 {
+    display: none;
+  }
+  .search-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  .col-xs-0 {
+    display: none;
+  }
+  .search-btn span {
+    display: none;
+  }
+  .testDetails .productDetails {
+    padding: 23px;
+  }
+}
+
+.App .query-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(2px);
+  background-color: rgba(000, 0, 0, 0.5);
+  z-index: 1020;
+  padding: 20px;
+}
+.App .query-container .query-background {
+  background-color: #eff4ff;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 16px 28px 0px #24242414;
+  border-radius: 10px;
+  position: relative;
+}
+
+.App .query-container .query-background .closeBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 50%;
+  height: 30px;
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
 }

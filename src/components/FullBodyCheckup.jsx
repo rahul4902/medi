@@ -6,12 +6,12 @@ const FullBodyCheckup = () => {
           {/* <span className="line"></span>
           <span className="heading">Full Body Checkup</span>
           <span className="line"></span> */}
-          <div class="sectionHead">
-            <h5 class="subtitle">
-              <span class="line"></span>
-              <span class="subtitle-text">Our Services</span>
+          <div className="sectionHead">
+            <h5 className="subtitle">
+              <span className="line"></span>
+              <span className="subtitle-text">Our Services</span>
             </h5>
-            <h4 class="title">Services We Offer</h4>
+            <h4 className="title">Services We Offer</h4>
           </div>
         </div>
         <div className="col-md-4 col-sm-12 col-xs-12 col-12">

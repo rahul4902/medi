@@ -27,12 +27,12 @@ const PopularPackages = () => {
           {/* <span className="line"></span>
           <span className="heading">Most Popular Packages</span>
           <span className="line"></span> */}
-          <div class="sectionHead">
-            <h5 class="subtitle">
-              <span class="line"></span>
-              <span class="subtitle-text">Most Popular Packages</span>
+          <div className="sectionHead">
+            <h5 className="subtitle">
+              <span className="line"></span>
+              <span className="subtitle-text">Most Popular Packages</span>
             </h5>
-            <h4 class="title">Popular Packages</h4>
+            <h4 className="title">Popular Packages</h4>
           </div>
         </div>
 
