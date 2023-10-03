@@ -40,7 +40,7 @@ function App() {
   const routeArray = [
     { path: "/", isStickyHeader: true, component: <Home /> },
     {
-      path: "search/details/:id",
+      path: "/search/details/:id",
       isStickyHeader: false,
       component: <SearchResults />,
     },
